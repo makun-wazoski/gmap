@@ -1,0 +1,10 @@
+<%= form_with(model: @map, local: true) do |f| %>
+<%# ***抜粋*** %>
+<label for="group-name">住所(GoogleMap表示)</label>
+<span class="indispensable-any">任意</span>
+<%= f.text_area :address,class:"new-performance-box", id:"gmap", placeholder:"Google Mapの住所をコピーして貼り付けてください" %>
+<%# ***抜粋*** %>
+<div class="newpost-btn-contents">
+  <%=f.submit "送信", class: "btn btn-primary btn-lg btn-sm", id:"new-post-btn" %>
+</div>
+<% end %>
